@@ -1,0 +1,15 @@
+\vspace {1em}\noindent \hrule \vspace {1em}
+\contentsline {section}{\numberline {1}第一章}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}ChatGPT的应用}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}教育}{3}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}三线表示例}{3}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}第四部分}{3}{subsection.1.4}%
+\contentsline {subsubsection}{\numberline {1.4.1}第一小节}{3}{subsubsection.1.4.1}%
+\contentsline {subsubsection}{\numberline {1.4.2}第二小节}{4}{subsubsection.1.4.2}%
+\contentsline {section}{\numberline {2}测试图片的插入与排布}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}插入图片}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}多个图片并行排布}{5}{subsection.2.2}%
+\contentsline {section}{\numberline {3}参考文献应用示例}{5}{section.3}%
+\contentsline {subsection}{\numberline {3.1}文献引用规范}{5}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}引用在论证中的应用}{6}{subsection.3.2}%
+\contentsline {section}{参考文献}{7}{subsection.3.2}%

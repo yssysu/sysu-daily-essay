@@ -1,0 +1,14 @@
+% 定义字体
+\setCJKmainfont[Path=./fonts/]{SimSun.ttf} % 设置中文字体
+\setmainfont{Times New Roman}             % 设置英文字体
+
+% 定义字号
+\newcommand{\erhao}{\fontsize{22pt}{33pt}\selectfont}     % 二号
+\newcommand{\sanhao}{\fontsize{16pt}{24pt}\selectfont}    % 三号
+\newcommand{\xiaosan}{\fontsize{15pt}{22.5pt}\selectfont} % 小三
+\newcommand{\sihao}{\fontsize{14pt}{21pt}\selectfont}     % 四号
+\newcommand{\xiaosi}{\fontsize{12pt}{18pt}\selectfont}    % 小四
+\newcommand{\wuhao}{\fontsize{10.5pt}{15.75pt}\selectfont}% 五号
+
+% 设置正文默认使用宋体小四
+\AtBeginDocument{\songti\xiaosi\selectfont}

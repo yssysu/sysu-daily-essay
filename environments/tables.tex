@@ -1,0 +1,19 @@
+% 定义三线表环境
+% 三条线的宽度分别为1.5pt、0.75pt和1.5pt 
+% 可根据个人喜好定义名称，这里定义为table1   
+\newenvironment{table1}[2]{ % 接受两个参数：表格列格式和题注
+    \renewcommand{\arraystretch}{1.5} % 调整行距，1.5 倍默认行距
+    \setlength{\tabcolsep}{8pt} % 调整列间距，默认值为 6pt
+    \begin{table}[h]
+    \centering
+    \caption{#2} % 添加题注，设置格式为黑体
+    \begin{tabular}{#1} % 表格列格式由用户指定
+    \specialrule{1.5pt}{0pt}{0pt} % 上线，宽度为 1.5pt
+    % 定义一个新命令用于中间线
+    \newcommand{\midline}{\specialrule{0.75pt}{0pt}{0pt}} % 中间线，宽度为 0.75pt
+}
+{
+    \specialrule{1.5pt}{0pt}{0pt} % 下线，宽度为 1.5pt
+    \end{tabular}
+    \end{table}
+}

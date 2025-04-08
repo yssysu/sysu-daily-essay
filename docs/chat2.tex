@@ -1,0 +1,33 @@
+\section{测试图片的插入与排布}
+\subsection{插入图片}
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width=0.5\textwidth]{./photo/Witcher_Geralt.jpg}
+    \caption{杰洛特}
+    \label{fig:geralt}
+    \vspace{-0.5cm} % 减少图片下方空白
+\end{figure}
+
+\newpage
+\subsection{多个图片并行排布}
+这是多个图片排布测试
+\begin{figure}[!htb]
+    \setlength{\intextsep}{0pt}   % 减少图形与文字间的垂直间距
+    \setlength{\abovecaptionskip}{0.1cm} % 减少标题上方空间
+    \setlength{\belowcaptionskip}{0.1cm} % 减少标题下方空间
+    \centering
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{./photo/Witcher_Geralt.jpg}
+        \caption{杰洛特}
+        \label{fig:geralt1}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{./photo/Witcher_Geralt.jpg}
+        \caption{杰洛特}
+        \label{fig:geralt2}
+    \end{minipage}
+    \vspace{-0.3cm} % 减少整个图片环境下方空白
+\end{figure}

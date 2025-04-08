@@ -1,0 +1,30 @@
+\documentclass[12pt,a4paper]{ctexart} % 使用 ctexart 文档类
+
+% 加载模块化设置
+\input{settings/packages}  % 宏包加载
+\input{settings/fonts}     % 字体设置
+\input{settings/layout}    % 页面布局和样式设置
+\input{settings/commands}  % 自定义命令
+
+\begin{document}
+
+% 封面页
+\input{docs/titlepage}
+
+% 摘要
+\input{docs/abstract}
+
+% 目录
+\tableofcontents
+\newpage
+\addhruleatend % 在目录与章节间添加横线
+
+% 正文内容
+\input{docs/chat1} % 第一章
+\input{docs/chat2} % 第二章
+\input{docs/chat3} % 第三章
+
+% 参考文献
+\input{docs/reference}
+
+\end{document}

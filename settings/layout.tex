@@ -1,0 +1,71 @@
+% -------------------------------------------------------
+% 样式设置
+% -------------------------------------------------------
+% 设置章节标题格式（使用宋体小四及以上）
+\titleformat*{\section}{\songti\sanhao\bfseries\raggedright} % 一级标题 宋体三号加粗
+\titleformat*{\subsection}{\songti\sihao\bfseries\raggedright} % 二级标题 宋体四号加粗
+\titleformat*{\subsubsection}{\songti\xiaosi\bfseries\raggedright} % 三级标题 宋体小四加粗
+
+% 定义居中章节标题命令(用于需要居中显示的特殊情况)
+\newcommand{\centersection}{\titleformat*{\section}{\songti\sanhao\bfseries\centering}}
+
+% 定义在目录与章节间添加横线的命令
+\newcommand{\addhruleatend}{%
+  \addtocontents{toc}{%
+    \protect\vspace{1em}%
+    \protect\noindent\protect\hrule%
+    \protect\vspace{1em}%
+  }%
+}
+
+% 美化目录条目样式
+\renewcommand{\cftsecfont}{\songti\sihao\bfseries} % 一级目录为宋体四号加粗
+\renewcommand{\cftsecpagefont}{\songti\sihao}
+\renewcommand{\cftsubsecfont}{\songti\sihao} % 二级目录为宋体小四号
+\renewcommand{\cftsubsecpagefont}{\songti\sihao}
+\renewcommand{\cftsubsubsecfont}{\songti\xiaosi} % 三级目录也使用宋体小四号
+\renewcommand{\cftsubsubsecpagefont}{\songti\xiaosi}
+
+% 调整目录间距
+\setlength{\cftaftertoctitleskip}{0.5em} % 目录标题与内容的间距
+\setlength{\cftsecindent}{0em} % 一级目录缩进
+\setlength{\cftsubsecindent}{1em} % 二级目录缩进
+\setlength{\cftsubsubsecindent}{2em} % 三级目录缩进
+
+% 设置目录标题居中并使用三号加粗
+\renewcommand{\cfttoctitlefont}{\hfill\songti\sanhao\bfseries}
+\renewcommand{\cftaftertoctitle}{\hfill}
+
+
+% 为目录添加点线
+\renewcommand{\cftdotsep}{1} % 设置点的间距
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}} % 一级目录添加点线
+\renewcommand{\cftsubsecleader}{\cftdotfill{\cftdotsep}} % 二级目录添加点线
+\renewcommand{\cftsubsubsecleader}{\cftdotfill{\cftdotsep}} % 三级目录添加点线
+
+
+% -------------------------------------------------------
+% 页面布局设置
+% -------------------------------------------------------
+% 页面尺寸和边距
+\geometry{
+    a4paper,
+    left=2.5cm,   % 左边距
+    right=2.5cm,  % 右边距
+    top=2.5cm,    % 上边距
+    bottom=2.5cm  % 下边距
+}
+
+% 行距设置
+\setstretch{1.5} % 设置行距为 1.5 倍
+
+% 页眉页脚设置，不需要的话也可以注释掉
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{猎魔人学习笔记} % 左侧页眉
+\fancyhead[R]{狼派猎魔人} % 右侧页眉
+\fancyfoot[C]{\thepage} % 页脚居中显示页码
+
+% 设置段落缩进
+\setlength{\parindent}{2em} % 缩进两个汉字
+\setlength{\parskip}{0em} 

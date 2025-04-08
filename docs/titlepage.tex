@@ -1,0 +1,34 @@
+% -------------------------------------------------------
+% 自定义封面页
+% -------------------------------------------------------
+\begin{titlepage}
+    \thispagestyle{empty} % 无页眉页脚
+    \centering
+  
+    % 顶部放置学校标志
+    \vspace*{0.2cm}
+    \includegraphics[width=0.3\textwidth]{photo/sysu-logo.pdf}\\[1.5cm]
+  
+    % 报告标题
+    {\songti\erhao\bfseries 本科课程论文（设计）}\\[0.5cm]
+  
+    % 分隔线 - 使用中大绿色并与页面等宽
+    \definecolor{SYSUGreen}{RGB}{0, 104, 71} % 定义中山大学绿色
+    \noindent\textcolor{SYSUGreen}{\rule{\textwidth}{1.5pt}}\\[1.5cm]
+  
+    % 报告信息表格
+    \renewcommand{\arraystretch}{1.8} % 调整行间距
+    \begin{tabular}{p{4cm} p{10cm}}
+      \songti\sihao\bfseries \makebox[4cm][s]{题目：} & \underline{\makebox[10cm][c]{\songti\sihao 中山大学本科课程论文}} \\ 
+      \songti\sihao\bfseries \makebox[4cm][s]{姓名：} & \underline{\makebox[10cm][c]{\songti\sihao 杰洛特}} \\ 
+      \songti\sihao\bfseries \makebox[4cm][s]{学号：} & \underline{\makebox[10cm][c]{\songti\sihao 1234567}} \\ 
+      \songti\sihao\bfseries \makebox[4cm][s]{院系：} & \underline{\makebox[10cm][c]{\songti\sihao 利维亚}} \\ 
+      \songti\sihao\bfseries \makebox[4cm][s]{专业：} & \underline{\makebox[10cm][c]{\songti\sihao 猎魔人}} \\ 
+      \songti\sihao\bfseries \makebox[4cm][s]{指导教师：} & \underline{\makebox[10cm][c]{\songti\sihao 维瑟米尔}} \\ 
+      \songti\sihao\bfseries \makebox[4cm][s]{日期：} & \underline{\makebox[10cm][c]{\songti\sihao 2025 年 4 月 1 日}} \\ 
+    \end{tabular}
+  
+    % 底部空白
+    \vfill
+  \end{titlepage}
+  

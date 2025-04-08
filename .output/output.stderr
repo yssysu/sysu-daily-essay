@@ -1,0 +1,14 @@
+ChkTeX v1.7.8 - Copyright 1995-96 Jens T. Berger Thielemann.
+Compiled with PCRE regex support.
+No errors printed; No warnings printed; 275 user suppressed warnings; No line suppressed warnings.
+Latexmk: Missing bbl file 'output.bbl' in following:
+ No file output.bbl.
+Latexmk: Missing input file 'output.toc' (or dependence on it) from following:
+  No file output.toc.
+output.xdv -> output.pdf
+[1
+xdvipdfmx:warning: Trying to include PDF file with version (1.6), which is newer than current output PDF setting (1.5).
+][2
+xdvipdfmx:warning: Object @page.1 already defined.
+][3][4][5][6][7][8]
+512186 bytes written

@@ -1,0 +1,162 @@
+chktex exit: 0
+Rc files read:
+  /usr/local/share/latexmk/LatexMk
+Latexmk: This is Latexmk, John Collins, 31 Jan. 2024. Version 4.83.
+Latexmk: Changing directory to '/compile/'
+No existing .aux file, so I'll make a simple one, and require run of *latex.
+Force *latex to be remade.
+------------
+Running 'internal overleaf_pre_process "main.tex" "output.pdf"'
+------------
+Latexmk: calling overleaf_pre_process( "main.tex" "output.pdf" )
+Latexmk: applying rule 'xelatex'...
+Rule 'xelatex':  Reasons for rerun
+Category 'other':
+  Rerun of 'xelatex' forced or previously required:
+    Reason or flag: 'go_mode=3'
+
+------------
+Run number 1 of rule 'xelatex'
+------------
+------------
+Running 'xelatex -no-pdf -synctex=1 -interaction=batchmode -recorder --jobname="output"  "main.tex"'
+------------
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex)
+ \write18 enabled.
+entering extended mode
+
+SyncTeX written on output.synctex.gz.Latexmk: Getting log file 'output.log'
+Latexmk: Examining 'output.fls'
+Latexmk: Examining 'output.log'
+Latexmk: References changed.
+Latexmk: References changed.
+Latexmk: References changed.
+Latexmk: Log file says output to 'output.xdv'
+Latexmk: Bibliography file(s) from .bcf file:
+  ./docs/reference.bib
+Latexmk: applying rule 'biber output'...
+Rule 'biber output':  Reasons for rerun
+Category 'other':
+  Rerun of 'biber output' forced or previously required:
+    Reason or flag: 'Initial set up of rule'
+
+------------
+Run number 1 of rule 'biber output'
+------------
+------------
+Running 'biber  "output.bcf"'
+------------
+INFO - This is Biber 2.20
+INFO - Logfile is 'output.blg'
+INFO - Reading 'output.bcf'
+INFO - Found 10 citekeys in bib section 0
+INFO - Processing section 0
+INFO - Looking for bibtex file './docs/reference.bib' for section 0
+INFO - LaTeX decoding ...
+INFO - Found BibTeX data source './docs/reference.bib'
+INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-US'
+INFO - No sort tailoring available for locale 'en-US'
+INFO - Writing 'output.bbl' with encoding 'UTF-8'
+INFO - Output to output.bbl
+Latexmk: Found biber source file(s) [./docs/reference.bib, output.bcf]
+Latexmk: applying rule 'xelatex'...
+Rule 'xelatex':  Reasons for rerun
+Changed files or newly in use/created:
+  output.aux
+  output.bbl
+  output.out
+  output.toc
+
+------------
+Run number 2 of rule 'xelatex'
+------------
+------------
+Running 'xelatex -no-pdf -synctex=1 -interaction=batchmode -recorder --jobname="output"  "main.tex"'
+------------
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex)
+ \write18 enabled.
+entering extended mode
+
+SyncTeX written on output.synctex.gz.Latexmk: Getting log file 'output.log'
+Latexmk: Examining 'output.fls'
+Latexmk: Examining 'output.log'
+Latexmk: Found input bbl file 'output.bbl'
+Latexmk: Log file says output to 'output.xdv'
+Latexmk: Bibliography file(s) from .bcf file:
+  ./docs/reference.bib
+Latexmk: applying rule 'xelatex'...
+Rule 'xelatex':  Reasons for rerun
+Changed files or newly in use/created:
+  output.aux
+  output.run.xml
+
+------------
+Run number 3 of rule 'xelatex'
+------------
+------------
+Running 'xelatex -no-pdf -synctex=1 -interaction=batchmode -recorder --jobname="output"  "main.tex"'
+------------
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex)
+ \write18 enabled.
+entering extended mode
+
+SyncTeX written on output.synctex.gz.Latexmk: Getting log file 'output.log'
+Latexmk: Examining 'output.fls'
+Latexmk: Examining 'output.log'
+Latexmk: Found input bbl file 'output.bbl'
+Latexmk: Log file says output to 'output.xdv'
+Latexmk: Bibliography file(s) from .bcf file:
+  ./docs/reference.bib
+Latexmk: applying rule 'xelatex'...
+Rule 'xelatex':  Reasons for rerun
+Changed files or newly in use/created:
+  output.run.xml
+
+------------
+Run number 4 of rule 'xelatex'
+------------
+------------
+Running 'xelatex -no-pdf -synctex=1 -interaction=batchmode -recorder --jobname="output"  "main.tex"'
+------------
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex)
+ \write18 enabled.
+entering extended mode
+
+SyncTeX written on output.synctex.gz.Latexmk: Getting log file 'output.log'
+Latexmk: Examining 'output.fls'
+Latexmk: Examining 'output.log'
+Latexmk: Found input bbl file 'output.bbl'
+Latexmk: Log file says output to 'output.xdv'
+Latexmk: Bibliography file(s) from .bcf file:
+  ./docs/reference.bib
+Latexmk: applying rule 'xdvipdfmx'...
+Rule 'xdvipdfmx':  Reasons for rerun
+Changed files or newly in use/created:
+  output.xdv
+Category 'changed_source_rules':
+  xelatex
+Category 'no_dest':
+  xdvipdfmx
+
+------------
+Run number 1 of rule 'xdvipdfmx'
+------------
+------------
+Running 'xdvipdfmx -z 6 -i dvipdfmx-unsafe.cfg -o "output.pdf"  "output.xdv"'
+------------
+Latexmk: Errors, in force_mode: so I tried finishing targets
+------------
+Running 'internal overleaf_post_process "main.tex" "output.pdf"'
+------------
+Latexmk: calling overleaf_post_process( "main.tex" "output.pdf" )
+qpdf exit code=0
+Renaming optimised file to output.pdf
+Extracting xref table for output.pdf
+qpdf --show-xref exit code=0
+Collected error summary (may duplicate other messages):
+  xelatex: Command for 'xelatex' gave return code 1
+      Refer to 'output.log' and/or above output for details
+Latexmk: Undoing directory change
+

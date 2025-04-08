@@ -1,0 +1,13 @@
+\usepackage{graphicx}
+
+\newenvironment{image1}[2] % #1 for label, #2 for caption
+{%
+    \begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{#1}
+    \caption{#2}
+    \label{fig:#1}
+}
+{%
+    \end{figure}
+}
