@@ -34,7 +34,7 @@
 
 % 设置目录标题居中并使用三号加粗
 \renewcommand{\cfttoctitlefont}{\hfill\songti\sanhao\bfseries}
-\renewcommand{\cftaftertoctitle}{\hfill}
+\renewcommand{\cftaftertoctitle}{\hfill\vspace{1em}}
 
 
 % 为目录添加点线
@@ -56,15 +56,25 @@
     bottom=2.5cm  % 下边距
 }
 
+% 完全禁用页眉
+\pagestyle{plain}           % 使用plain页面风格
+\fancypagestyle{plain}{     % 重定义plain页面风格
+  \fancyhf{}                % 清除所有页眉页脚
+  \fancyfoot[C]{\thepage}   % 只在页脚中间显示页码
+  \renewcommand{\headrulewidth}{0pt} % 移除页眉线
+}
+
+% 启用页眉页脚
+% \pagestyle{fancy}
+% \fancyhf{}
+% \fancyhead[L]{猎魔人学习笔记} % 左侧页眉
+% \fancyhead[R]{狼派猎魔人} % 右侧页眉
+% \fancyfoot[C]{\thepage} % 页脚居中显示页码
+
+
 % 行距设置
 \setstretch{1.5} % 设置行距为 1.5 倍
 
-% 页眉页脚设置，不需要的话也可以注释掉
-\pagestyle{fancy}
-\fancyhf{}
-\fancyhead[L]{猎魔人学习笔记} % 左侧页眉
-\fancyhead[R]{狼派猎魔人} % 右侧页眉
-\fancyfoot[C]{\thepage} % 页脚居中显示页码
 
 % 设置段落缩进
 \setlength{\parindent}{2em} % 缩进两个汉字
